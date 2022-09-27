@@ -13,11 +13,11 @@ local blackjackGameData = {}
 function tryTakeChips(source,amount)
     local Player = QBCore.Functions.GetPlayer(source)
     if Player ~= nil then
-         local Chips = Player.Functions.GetItemByName("casinochips")
+         local Chips = Player.Functions.GetItemByName("redchip")
 		 if Chips ~= nil then
 		 	if Chips.amount >= 100 then
-                 Player.Functions.RemoveItem("casinochips", amount)
-                TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['casinochips'], "remove", amount)
+                 Player.Functions.RemoveItem("redchip", amount)
+                TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['redchip'], "remove", amount)
                  return true
 		 	else
                  TriggerClientEvent('QBCore:Notify', source, 'You dont have enough chips', 'error')
@@ -38,7 +38,7 @@ function giveChips(source,amount)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player ~= nil then
-        if Player.Functions.AddItem('casinochips', amount, nil, {["quality"] = 100}) then
+        if Player.Functions.AddItem('redchip', amount, nil, {["quality"] = 100}) then
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["casinochips"], "add", amount)
         else
             TriggerClientEvent('QBCore:Notify', source, 'You have to much in your pockets', 'error')
