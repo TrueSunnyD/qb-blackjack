@@ -1,6 +1,3 @@
---------------------------------------------
---Created by Robbster, do not redistribute--
---------------------------------------------
 --If you're snooping here, before you ask why some function names are horrible things like func_368, its so I could keep track of where I was at in the decompiled scripts :P
 
 local closeToCasino = false
@@ -43,34 +40,34 @@ local cfg = {}
 cfg.blackjackTables = {
     --[id] = {x,y,z,heading}
     [0] = {
-        dealerPos = vector3(1036.05, 54.24, 69.06),
-        dealerHeading = 2.44,
-        tablePos = vector3(1035.85, 55.02, 68.06),
-        tableHeading = 193.16,
+        dealerPos = vector3(995.75, 57.87, 69.43),
+        dealerHeading = 59.91,
+        tablePos = vector3(993.89, 58.74, 69.43),
+        tableHeading = 247.66,
         distance = 1000.0,
         prop = "vw_prop_casino_blckjack_01"
     },
     [1] = {
-        dealerPos = vector3(1036.54, 51.68, 69.06),
-        dealerHeading = 196.24,
-        tablePos = vector3(1036.81, 50.91, 68.06),
-        tableHeading = 13.16,
+        dealerPos = vector3(996.9, 52.46, 69.43),
+        dealerHeading = 145.42,
+        tablePos = vector3(995.69, 50.87, 69.43),
+        tableHeading = 316.07,
         distance = 1000.0,
         prop = "vw_prop_casino_blckjack_01"
     },
     [2] = {
-        dealerPos = vector3(1034.71, 41.7, 69.87),
-        dealerHeading = 98.4,
-        tablePos = vector3(1033.82, 41.51, 68.86),
-        tableHeading = 283.16,
+        dealerPos = vector3(988.65, 46.55, 70.24),
+        dealerHeading = 210.93,
+        tablePos = vector3(988.65, 46.55, 70.24),
+        tableHeading = 70.24,
         distance = 1000.0,
         prop = "vw_prop_casino_blckjack_01b"
     },
     [3] = {
-        dealerPos = vector3(1026.98, 39.84, 69.87),
-        dealerHeading = 284.12,
-        tablePos = vector3(1027.86, 40.08, 68.86),
-        tableHeading = 103.47,
+        dealerPos = vector3(986.37, 42.04, 70.24),
+        dealerHeading = 280.28,
+        tablePos = vector3(988.43, 42.5, 70.24),
+        tableHeading = 110.57,
         distance = 1000.0,
         prop = "vw_prop_casino_blckjack_01b"
     },
